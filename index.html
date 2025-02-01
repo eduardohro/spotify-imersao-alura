@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
     <title>Spotify Imersão</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/vars.css">
+    <link rel="stylesheet" href="src/styles/sidebar-footer.css">
 
     <!-- Links para trazer os ícones via CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
@@ -17,7 +18,7 @@
     <div class="sidebar">
         <nav class="sidebar__navigation">
             <div class="logo">
-                <a href=""><img src="assets/icons/logo-spotify.png" alt="logo-spotify">
+                <a href=""><img src="src/assets/icons/logo-spotify.png" alt="logo-spotify">
                 </a>
             </div>
             <ul>
@@ -65,6 +66,26 @@
             </div>
         </div>
     </div>
+
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="src/assets/icons/small-left.png" alt="Seta esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="src/assets/icons/small-right.png" alt="Seta direita">
+                    </button>
+
+                    <div class="header__search">
+                        <img src="src/assets/icons/search.png" alt="">
+                        <input id="search-input" type="text" maxlength="800" placeholder="">
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </main>
 
     <footer class="disclaimer-premium">
         <div class="text">
