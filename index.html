@@ -64,10 +64,18 @@
             </div>
 
             <div class="languages">
-                <button class="languages__button">
+                <button class="languages__button" onclick="toggleDropdown()">
                     <span class="fa fa-globe"></span>
-                    <span>Português do Brasil</span>
+                    <span id="language-name">Português do Brasil</span>
                 </button>
+                <ul class="languages__list" id="languageDropdown">
+                    <li class="language-title">Escolha um idioma</li>
+                    <li onclick="changeLanguage('Português do Brasil')">Português do Brasil</li>
+                    <li onclick="changeLanguage('English')">English (Inglês)</li>
+                    <li onclick="changeLanguage('Español')">Español (Espanhol)</li>
+                    <li onclick="changeLanguage('Français')">Français (Frances)</li>
+                    <li onclick="changeLanguage('Deutsch')">Deutsch (Alemão)</li>
+                </ul>
             </div>
         </div>
     </div>
