@@ -32,27 +32,3 @@ document.addEventListener('input', function () {
     
     requestApi(searchTerm);
 })
-
-
-// FUNCTION BUTTON LANGUAGES
-
-function toggleDropdown() {
-    const dropdown = document.getElementById("languageDropdown");
-    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
-}
-
-function changeLanguage(language) {
-    document.getElementById("language-name").textContent = language;
-    document.getElementById("languageDropdown").style.display = "none";
-    
-    console.log("Idioma selecionado:", language);
-}
-
-document.addEventListener("click", function (event) {
-    const dropdown = document.getElementById("languageDropdown");
-    const button = document.querySelector(".languages__button");
-
-    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
-        dropdown.style.display = "none";
-    }
-});
